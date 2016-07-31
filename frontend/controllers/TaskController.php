@@ -15,6 +15,10 @@ use yii\web\Request;
 
 class TaskController extends Controller
 {
+    /**
+     * 提交报修信息
+     * @return string
+     */
     public function actionAdd()
     {
         $model = new Task();
@@ -28,7 +32,7 @@ class TaskController extends Controller
                 $model->save();
                 $cond = [
                     'type' => 'success',
-                    'title' => '保修信息提交成功',
+                    'title' => '报修信息提交成功',
                     'content' => '点击确定返回首页',
                     'url' => ['site/index']
                 ];
