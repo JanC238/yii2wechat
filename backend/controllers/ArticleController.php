@@ -45,9 +45,11 @@ class ArticleController extends Controller
             $model->load($request->post());
             $model->img = UploadedFile::getInstance($model, 'img');
             if ($model->validate()) {
-                $imgUrl = 'uploads/' . time() . rand(100, 999) . '.' . $model->img->extension;
-                if ($model->img->saveAs($imgUrl, false)) {
-                    $model->image = $imgUrl;
+                if ($model->img) {
+                    $imgUrl = 'uploads/' . time() . rand(100, 999) . '.' . $model->img->extension;
+                    if ($model->img->saveAs($imgUrl, false)) {
+                        $model->image = $imgUrl;
+                    }
                 }
                 //>>todo 用户id
                 $model->user_id = 1;
