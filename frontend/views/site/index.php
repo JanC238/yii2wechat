@@ -29,7 +29,7 @@ $this->title = 'My Yii Application';
                     </a>
                 </div>
                 <div class="col-xs-4">
-                    <a href="online.html">
+                    <a href="<?=\yii\helpers\Url::to(['task/add'])?>">
                         <div class="indexLabel label-info">
                             <span class="glyphicon glyphicon-heart-empty"></span><br/>
                             在线报修

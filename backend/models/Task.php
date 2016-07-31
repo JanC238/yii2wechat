@@ -33,7 +33,7 @@ class Task extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'name', 'phone', 'content', 'address', 'title'], 'required'],
+            [['name', 'phone', 'content', 'address', 'title'], 'required'],
             [['content'], 'string'],
             [['create_time', 'update_time', 'status'], 'integer'],
             [['name', 'phone'], 'string', 'max' => 32],
@@ -57,5 +57,14 @@ class Task extends \yii\db\ActiveRecord
             'update_time' => '修改时间',
             'status' => '状态',
         ];
+    }
+
+    public function beforeSave($insert)
+    {
+        if ($this->isNewRecord) {
+            $this->update_time = time();
+        }
+        $this->create_time = time();
+        return parent::beforeSave($insert);
     }
 }
