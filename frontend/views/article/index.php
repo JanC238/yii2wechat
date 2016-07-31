@@ -16,7 +16,7 @@
                 <div class="col-xs-10">
                     <p class="title"><?= $article->title ?></p>
                     <p class="intro">
-                        <?= mb_substr($article->content, 0, 20, 'utf8') ?>
+                        <?= strip_tags(mb_substr($article->content, 0, 20, 'utf8')); ?>
                         <?php if (mb_strlen($article->content) > 20) {
                             echo '...';
                         } ?>
