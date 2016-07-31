@@ -4,50 +4,64 @@
 
 $this->title = 'My Yii Application';
 ?>
-<div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+<div class="container-fluid">
+    <div class="indexImg row">
+        <img src="../image/index.png" width="100%" />
     </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+    <div class="serviceList text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <a href="notice.html">
+                        <div class="indexLabel label-danger">
+                            <span class="glyphicon glyphicon-bullhorn"></span><br/>
+                            小区通知
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="<?=\yii\helpers\Url::to(['article/index','cate_id'=>2])?>">
+                        <div class="indexLabel label-warning">
+                            <span class="glyphicon glyphicon-ok-circle"></span><br/>
+                            便民服务
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="online.html">
+                        <div class="indexLabel label-info">
+                            <span class="glyphicon glyphicon-heart-empty"></span><br/>
+                            在线报修
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="notice.html">
+                        <div class="indexLabel label-success">
+                            <span class="glyphicon glyphicon-briefcase"></span><br/>
+                            商家活动
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="zushou.html">
+                        <div class="indexLabel label-primary">
+                            <span class="glyphicon glyphicon-usd"></span><br/>
+                            小区租售
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="notice.html">
+                        <div class="indexLabel label-default">
+                            <span class="glyphicon glyphicon-apple"></span><br/>
+                            小区活动
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
-
     </div>
+</div>
 </div>
