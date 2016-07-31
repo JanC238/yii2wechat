@@ -9,7 +9,7 @@
 namespace backend\controllers;
 
 
-use app\models\Articlecate;
+use backend\models\Articlecate;
 use yii\web\Controller;
 use yii\web\HttpException;
 use yii\web\Request;

@@ -9,8 +9,8 @@
 namespace backend\controllers;
 
 
-use app\models\Article;
-use app\models\Articlecate;
+use backend\models\Article;
+use backend\models\Articlecate;
 use yii\data\Pagination;
 use yii\helpers\ArrayHelper;
 use yii\web\Controller;
