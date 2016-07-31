@@ -13,7 +13,7 @@ $this->title = 'My Yii Application';
         <div class="container">
             <div class="row">
                 <div class="col-xs-4">
-                    <a href="notice.html">
+                    <a href="<?=\yii\helpers\Url::to(['article/index','cate_id'=>2])?>">
                         <div class="indexLabel label-danger">
                             <span class="glyphicon glyphicon-bullhorn"></span><br/>
                             小区通知

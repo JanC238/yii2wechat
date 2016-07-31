@@ -9,7 +9,7 @@
 <div class="container-fluid">
     <?php foreach ($articles as $article): ?>
         <div class="row noticeList">
-            <a href="notice-detail.html">
+            <a href="<?=\yii\helpers\Url::to(['article/view','id'=>$article->id])?>">
                 <div class="col-xs-2">
                     <img class="noticeImg" src="<?= Yii::$app->params['imgUrl'] . $article->image;?>"/>
                 </div>

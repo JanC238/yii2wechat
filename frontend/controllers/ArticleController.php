@@ -22,6 +22,7 @@ class ArticleController extends Controller
 
     public function actionView($id)
     {
-        return $this->render('view');
+        $article = Article::findOne($id);
+        return $this->render('view', ['article' => $article]);
     }
 }
