@@ -35,10 +35,10 @@ AppAsset::register($this);
                 <p class="navbar-text"><a href="fuwu.html" class="navbar-link">服务</a></p>
             </div>
             <div class="col-xs-3">
-                <p class="navbar-text"><a href="faxian.html" class="navbar-link">发现</a></p>
+                <p class="navbar-text"><a href="" class="navbar-link">发现</a></p>
             </div>
             <div class="col-xs-3">
-                <p class="navbar-text"><a href="my.html" class="navbar-link">我的</a></p>
+                <p class="navbar-text"><a href="<?=\yii\helpers\Url::to(['user/index'])?>" class="navbar-link">我的</a></p>
             </div>
         </div>
     </nav>
