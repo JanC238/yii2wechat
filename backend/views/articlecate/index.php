@@ -15,7 +15,7 @@ $this->title = '文章分类';
             </a>
             <a href="<?=\yii\helpers\Url::to(['articlecate/index'])?>" class="list-group-item">文章分类管理</a>
             <a href="<?=\yii\helpers\Url::to(['article/index'])?>" class="list-group-item">文章管理</a>
-            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+            <a href="<?=\yii\helpers\Url::to(['salerental/index'])?>" class="list-group-item">租售信息</a>
             <a href="#" class="list-group-item">Vestibulum at eros</a>
         </div>
     </div>
