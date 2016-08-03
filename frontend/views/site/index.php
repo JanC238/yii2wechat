@@ -45,7 +45,7 @@ $this->title = 'My Yii Application';
                     </a>
                 </div>
                 <div class="col-xs-4">
-                    <a href="zushou.html">
+                    <a href="<?=\yii\helpers\Url::to(['salerental/index'])?>">
                         <div class="indexLabel label-primary">
                             <span class="glyphicon glyphicon-usd"></span><br/>
                             小区租售
